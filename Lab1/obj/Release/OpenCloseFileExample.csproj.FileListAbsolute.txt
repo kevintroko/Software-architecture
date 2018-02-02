@@ -1,0 +1,15 @@
+C:\Documents and Settings\acc01\Desktop\OpenCloseFileExample\OpenCloseFileExample\bin\Release\example.exe
+C:\Documents and Settings\acc01\Desktop\OpenCloseFileExample\OpenCloseFileExample\bin\Release\example.pdb
+C:\Documents and Settings\acc01\Desktop\OpenCloseFileExample\OpenCloseFileExample\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\acc01\Desktop\OpenCloseFileExample\OpenCloseFileExample\obj\Release\example.exe
+C:\Documents and Settings\acc01\Desktop\OpenCloseFileExample\OpenCloseFileExample\obj\Release\example.pdb
+C:\svn\dva422\www\OpenCloseFileExample\OpenCloseFileExample\bin\Release\example.exe
+C:\svn\dva422\www\OpenCloseFileExample\OpenCloseFileExample\bin\Release\example.pdb
+C:\svn\dva422\www\OpenCloseFileExample\OpenCloseFileExample\obj\Release\example.exe
+C:\svn\dva422\www\OpenCloseFileExample\OpenCloseFileExample\obj\Release\example.pdb
+C:\Users\abm13007\Downloads\OpenCloseFileExample\OpenCloseFileExample\OpenCloseFileExample\bin\Release\example.exe
+C:\Users\abm13007\Downloads\OpenCloseFileExample\OpenCloseFileExample\OpenCloseFileExample\bin\Release\example.pdb
+C:\Users\abm13007\Downloads\OpenCloseFileExample\OpenCloseFileExample\OpenCloseFileExample\obj\Release\OpenCloseFileExample.csprojResolveAssemblyReference.cache
+C:\Users\abm13007\Downloads\OpenCloseFileExample\OpenCloseFileExample\OpenCloseFileExample\obj\Release\OpenCloseFileExample.csproj.CoreCompileInputs.cache
+C:\Users\abm13007\Downloads\OpenCloseFileExample\OpenCloseFileExample\OpenCloseFileExample\obj\Release\example.exe
+C:\Users\abm13007\Downloads\OpenCloseFileExample\OpenCloseFileExample\OpenCloseFileExample\obj\Release\example.pdb

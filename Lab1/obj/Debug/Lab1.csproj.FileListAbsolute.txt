@@ -1,0 +1,10 @@
+C:/Users/abm13007/Downloads/OpenCloseFileExample/OpenCloseFileExample/OpenCloseFileExample/bin/Debug/example.exe
+C:/Users/abm13007/Downloads/OpenCloseFileExample/OpenCloseFileExample/OpenCloseFileExample/bin/Debug/example.pdb
+C:/Users/abm13007/Downloads/OpenCloseFileExample/OpenCloseFileExample/OpenCloseFileExample/obj/Debug/Lab1.csproj.CoreCompileInputs.cache
+C:/Users/abm13007/Downloads/OpenCloseFileExample/OpenCloseFileExample/OpenCloseFileExample/obj/Debug/example.exe
+C:/Users/abm13007/Downloads/OpenCloseFileExample/OpenCloseFileExample/OpenCloseFileExample/obj/Debug/example.pdb
+/Users/Kevintroko/Desktop/Lab1/Lab1/bin/Debug/example.exe
+/Users/Kevintroko/Desktop/Lab1/Lab1/bin/Debug/example.pdb
+/Users/Kevintroko/Desktop/Lab1/Lab1/obj/Debug/Lab1.csproj.CoreCompileInputs.cache
+/Users/Kevintroko/Desktop/Lab1/Lab1/obj/Debug/example.exe
+/Users/Kevintroko/Desktop/Lab1/Lab1/obj/Debug/example.pdb

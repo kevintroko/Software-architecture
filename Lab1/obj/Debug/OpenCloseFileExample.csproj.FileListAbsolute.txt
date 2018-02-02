@@ -1,0 +1,6 @@
+C:\Users\abm13007\Downloads\OpenCloseFileExample\OpenCloseFileExample\OpenCloseFileExample\bin\Debug\example.exe
+C:\Users\abm13007\Downloads\OpenCloseFileExample\OpenCloseFileExample\OpenCloseFileExample\bin\Debug\example.pdb
+C:\Users\abm13007\Downloads\OpenCloseFileExample\OpenCloseFileExample\OpenCloseFileExample\obj\Debug\OpenCloseFileExample.csproj.CoreCompileInputs.cache
+C:\Users\abm13007\Downloads\OpenCloseFileExample\OpenCloseFileExample\OpenCloseFileExample\obj\Debug\example.exe
+C:\Users\abm13007\Downloads\OpenCloseFileExample\OpenCloseFileExample\OpenCloseFileExample\obj\Debug\example.pdb
+C:\Users\abm13007\Downloads\OpenCloseFileExample\OpenCloseFileExample\OpenCloseFileExample\obj\Debug\OpenCloseFileExample.csprojResolveAssemblyReference.cache
