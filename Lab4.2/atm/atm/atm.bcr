@@ -73,24 +73,22 @@ package Specification1
                 
 	-- ATM::Withdraw: the user has selected to withdraw the given amount       
 
-	context ATM::Withdraw(Requested : Real) --The user tries to withdraw money while having sufficient balance
-	    pre: state = ATMState::WaitingForCommand and currentAccount.Balance >= Requested
+	context ATM::Withdraw(Amount : Real) --The user tries to withdraw money while having sufficient balance
+	    pre: state = ATMState::WaitingForCommand and currentAccount.Balance >= Amount
 	    	-- system shall prepare to eject the card and the requested money
-	    post: state = ATMState::WaitingForCardAndCashRemoval and currentAccount.Balance = currentAccount.Balance@pre - Requested
+	    post: state = ATMState::WaitingForCardAndCashRemoval and currentAccount.Balance = currentAccount.Balance@pre - Amount
 	        -- the requested amount is reduced from the current accounts balance
-	context ATM::Withdraw(Requested : Real)--The user tries to withdraw money while having insufficient balance
-	    pre: state = ATMState::WaitingForCommand and currentAccount.Balance < Requested
+	        
+	    
+	context ATM::Withdraw(Amount : Real)--The user tries to withdraw money while having insufficient balance
+	    pre: state = ATMState::WaitingForCommand and currentAccount.Balance < Amount
 	    	-- the system doesn't accept the request and returns to wait for commands
 	    post: state = ATMState::WaitingForCommand
-	-- End of ATM::Withdraw       
-	-- ATM::RemoveCard: the user has removed the ejected card
 
-	context ATM::RemoveCard() --The user tries to withdraw money while having sufficient balance
-
-	
+	-- ATM::RemoveCard:the user has removed the ejected card
 	-- This operation is invoked after the system has ejected a card
 	-- There are two posible actions depending on the context
-	context ATM::RemoveCard()
+	context ATM::RemoveCard()--The user tries to withdraw money while having sufficient balance
 	-- If the system is in the WaitingForCardRemoval state, the ATM will be ready to accept a new customer's card.
 	    pre: state = ATMState::WaitingForCardRemoval 
 	        -- The system shall either be ready to accept a new card 
@@ -102,10 +100,11 @@ package Specification1
 	        -- The operation will send the user to dispense the customer's cash state.
 	    post: state = ATMState::WaitingForCashRemoval
             
-	-- ATM::RemoveCash: the user removes the dispensed cash
+-- ATM::RemoveCash: the user removes the dispensed cash
+	-- This operation is invoked after the system has dispensed some cash. 
 	context ATM::RemoveCash()
 	    pre: state = ATMState::WaitingForCashRemoval
-	    
+	    	-- After the operation, the system shall be ready to accept insertion of a new card.
 	    post: state = ATMState::WaitingForCard
 	-- End of ATM::RemoveCash
                          
