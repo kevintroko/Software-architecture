@@ -72,21 +72,21 @@ package Specification1
     -- End of ATM::Cancel
                 
 	-- ATM::Withdraw: the user has selected to withdraw the given amount       
-	-- TODO: write specification for ATM::Withdraw
-	context ATM::Withdraw(Requested : Real)
+
+	context ATM::Withdraw(Requested : Real) --The user tries to withdraw money while having sufficient balance
 	    pre: state = ATMState::WaitingForCommand and currentAccount.Balance >= Requested
-	    
-	    post: state = ATMState::WaitingForCardRemoval and currentAccount.Balance = currentAccount.Balance@pre - Requested
-	        
-	context ATM::Withdraw(Requested : Real)
+	    	-- system shall prepare to eject the card and the requested money
+	    post: state = ATMState::WaitingForCardAndCashRemoval and currentAccount.Balance = currentAccount.Balance@pre - Requested
+	        -- the requested amount is reduced from the current accounts balance
+	context ATM::Withdraw(Requested : Real)--The user tries to withdraw money while having insufficient balance
 	    pre: state = ATMState::WaitingForCommand and currentAccount.Balance < Requested
-	    
+	    	-- the system doesn't accept the request and returns to wait for commands
 	    post: state = ATMState::WaitingForCommand
 	-- End of ATM::Withdraw       
             
 	-- ATM::RemoveCard: the user has removed the ejected card
-	-- TODO: write specification for ATM::RemoveCard
-	context ATM::RemoveCard()
+
+	context ATM::RemoveCard() --The user tries to withdraw money while having sufficient balance
 	    pre: state = ATMState::WaitingForCardRemoval 
 	        -- system shall either be ready to accept a new card 
 	    post: state = ATMState::WaitingForCard
@@ -101,7 +101,6 @@ package Specification1
 	    pre: state = ATMState::WaitingForCashRemoval
 	    
 	    post: state = ATMState::WaitingForCard
-	-- TODO: write specification for ATM::RemoveCash
 	-- End of ATM::RemoveCash
                          
 endpackage
