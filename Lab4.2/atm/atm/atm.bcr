@@ -83,17 +83,23 @@ package Specification1
 	    	-- the system doesn't accept the request and returns to wait for commands
 	    post: state = ATMState::WaitingForCommand
 	-- End of ATM::Withdraw       
-            
 	-- ATM::RemoveCard: the user has removed the ejected card
 
 	context ATM::RemoveCard() --The user tries to withdraw money while having sufficient balance
+
+	
+	-- This operation is invoked after the system has ejected a card
+	-- There are two posible actions depending on the context
+	context ATM::RemoveCard()
+	-- If the system is in the WaitingForCardRemoval state, the ATM will be ready to accept a new customer's card.
 	    pre: state = ATMState::WaitingForCardRemoval 
-	        -- system shall either be ready to accept a new card 
+	        -- The system shall either be ready to accept a new card 
 	    post: state = ATMState::WaitingForCard
 	        
 	context ATM:: RemoveCard()
+	-- If the ATM is in the WaitingForCardAndCashRemoval state, the system shall be ready to dispense the client's cash.
 	    pre: state = ATMState::WaitingForCardAndCashRemoval 
-	        --system shall either be ready to dispense the customer's cash
+	        -- The operation will send the user to dispense the customer's cash state.
 	    post: state = ATMState::WaitingForCashRemoval
             
 	-- ATM::RemoveCash: the user removes the dispensed cash
