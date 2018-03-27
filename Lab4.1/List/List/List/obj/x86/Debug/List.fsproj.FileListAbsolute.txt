@@ -1,8 +1,0 @@
-C:\Users\Albert\Downloads\List\List\List\bin\Debug\List.XML
-C:\Users\Albert\Downloads\List\List\List\bin\Debug\List.exe
-C:\Users\Albert\Downloads\List\List\List\bin\Debug\List.pdb
-C:\Users\Albert\Downloads\List\List\List\bin\Debug\FSharp.Core.dll
-C:\Users\Albert\Downloads\List\List\List\bin\Debug\FSharp.Core.xml
-C:\Users\Albert\Downloads\List\List\List\obj\x86\Debug\List.fsproj.CopyComplete
-C:\Users\Albert\Downloads\List\List\List\obj\x86\Debug\List.exe
-C:\Users\Albert\Downloads\List\List\List\obj\x86\Debug\List.pdb
