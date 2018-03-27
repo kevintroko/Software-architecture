@@ -45,8 +45,10 @@
          l
       else
           CircShift(Cons(Tail(l),Head(l)),n-1)
+
+   let rec _Count (l,n,i) =
+      match l with
+      |   Create -> i
+      |   Cons(l,v) -> if v=n then _Count(l,n,i+1) else _Count(l,n,i)
    let Count (l, n) =
-      let mutable counter = 0
-      for i in 1 .. (Length l) do
-         if GetByIndex(l,i)=n then counter <- counter + 1
-      counter
+      _Count(l,n,0)
