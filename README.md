@@ -14,3 +14,6 @@ https://drive.google.com/file/d/1LcwYrOq9jzl15d05-AfO0IR6RiKx4R3X/view?usp=shari
 
 ## February 28th
 - We have include the Laboration 2
+
+## March 27th 
+- Laboration 4.1 and 4.2 has been added in their respective folders
